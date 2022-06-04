@@ -8,8 +8,13 @@
 import Foundation
 import Combine
 
+
+/**
+ ObservableObject and @Published
+ */
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    var hikes: [Hike] = load("hikeData.json")
 }
 
 
