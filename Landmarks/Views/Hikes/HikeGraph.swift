@@ -20,7 +20,6 @@ extension Animation {
 struct HikeGraph: View {
     var hike: Hike
     var path: KeyPath<Hike.Observation, Range<Double>>
-
     var color: Color {
         switch path {
         case \.elevation:

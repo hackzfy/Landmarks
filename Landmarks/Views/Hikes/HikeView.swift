@@ -24,7 +24,7 @@ extension AnyTransition {
 struct HikeView: View {
     var hike: Hike
     // State 表示可以被 SwiftUI 读写的属性
-    @State private var showDetail = true
+    @State private var showDetail = false
     
     var body: some View {
         VStack {
