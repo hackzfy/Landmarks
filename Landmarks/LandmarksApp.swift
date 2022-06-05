@@ -16,5 +16,16 @@ struct Landmarks2App: App {
             ContentView()
                 .environmentObject(modelData)
         }
+        #if !os(watchOS)
+        .commands{
+            LandmarkCommands()
+        }
+        #endif
+        
+        #if os(macOS)
+        Settings {
+            LandmarkSettings()
+        }
+        #endif
     }
 }
